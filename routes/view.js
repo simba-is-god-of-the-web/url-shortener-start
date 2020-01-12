@@ -21,10 +21,7 @@ router.get('/:code', async (req, res, next) => {
 	})
 
 	res.cRender('view', {
-		code: record.code,
-		url: record.url,
-		baseUrl: process.env.BASEURL,
-		qrcode: await getQrcode(code)
+
 	});
 });
 

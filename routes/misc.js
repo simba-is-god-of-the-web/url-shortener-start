@@ -19,15 +19,7 @@ const getCode = () => base58.encode(crypto.randomBytes(4));
 
 //// verify url
 const isUrl = (url) => {
-	var prasedUrl = require('url').parse(url.toString());
-	if( prasedUrl.host &&
-		prasedUrl.hostname &&
-		prasedUrl.pathname && 
-		prasedUrl.protocol &&
-		prasedUrl.slashes ){
-		return true;
-	}
-	return false;
+
 };
 
 //// cRender custom render

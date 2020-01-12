@@ -5,7 +5,7 @@ require('dotenv').config();
 
 
 router.get('/', async (req, res, next) => {
-	// check if cookie is admin
+	// check permission
 
 	// get all record and send to client
 	await RecordModule.find({}, (err, data) => {

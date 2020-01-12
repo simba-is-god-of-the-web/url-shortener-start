@@ -8,10 +8,12 @@ var users = [];
 
 function token(ip){
 	var token = {};
+
 	return token;
 }
 
 function verify(token){
+
 }
 
 module.exports = {
