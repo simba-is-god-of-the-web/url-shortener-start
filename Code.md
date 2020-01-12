@@ -2,8 +2,8 @@
 
 ---
 
-* Download code [github]()
-* Answer [github]()
+* Download code [github](https://github.com/simba-is-god-of-the-web/url-shortener-start/archive/pre-release.zip)
+* Answer [github](https://github.com/simba-fs/url-shortener)
 
 ---
 
