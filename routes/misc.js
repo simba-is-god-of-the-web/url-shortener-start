@@ -24,19 +24,20 @@ const isUrl = (url) => {
 
 //// cRender custom render
 function cRender(req, res, next){
-	res.cRender = function(view, ...data){
-		data = data[0];
-		data = {
-			...data,
+	console.log('cRender loaded');
+	res.cRender = function(view, data){
+		newData = {
 			appName: process.env.appName,
 			title: process.env.title,
 			subtitle: process.env.subtitle,
-			ip: ip(req)
+			ip: ip(req),
+			...data
 		}
-		res.render(view, data);
+		res.render(view, newData);
 	}
 	next();
 }
+
 
 module.exports = {
 	auth: auth,
