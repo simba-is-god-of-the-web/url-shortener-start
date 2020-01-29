@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 	res.cRender('view-index');
 });
 
-router.get('/:code', async (req, res, next) => {
+router.get('/:code', (req, res, next) => {
 	const code;
 	const record;
 	
